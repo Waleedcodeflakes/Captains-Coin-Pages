@@ -1,0 +1,180 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;  
+}
+.space-grotesk-font{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.dm-sans-font{
+    font-family: 'DM Sans';
+}
+.urbanist-font{
+    font-family: 'Urbanist', sans-serif;
+}
+.lato-font{
+    font-family: 'Lato', sans-serif;
+}
+.body-hr{
+    border: 1px solid #CDD6D7;
+}
+/* CSS: Hero section start */
+.hero{
+    padding: 17px;
+    background: linear-gradient(134.66deg, #36BB91 -5.13%, #CFE0E6 93.57%, #CFE6DB 93.57%);
+    background-size: 100%;
+    
+}
+.hero-content{
+    margin: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.hero-header p{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.nav-links ul{
+    list-style-type: none;
+    padding: 0px 30px;
+}
+.nav-links ul li{
+    align-items: baseline;
+    font-size: 18px;
+    line-height: 180%;
+    font-weight: 500;
+    padding: 0px 30px;
+}
+.nav-links ul a{
+    text-decoration: none;
+    color: #04091E;
+}
+.nav-links ul li button{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #fff;
+    background-color: #04091E;
+    padding: 8px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hero-icon{
+    display: inline-grid;
+    justify-items: center;
+}
+.hero-icon svg{
+    padding-bottom: 2px;
+}
+/* CSS: Hero section ends */
+/* CSS: Dashboard Section Start */
+.dashboard{
+    margin-top: 60px;
+}
+.dashboard-left-linkpages{
+    width: 20%;
+    border-right: 1.12778px solid #EFF0F6;
+    border-radius: 10px 0px;
+    background: white;
+}
+.dashboard-text{
+    background: #F5F5F5;
+    border-radius: 10px;
+    width: fit-content;
+}
+.dashboard-links-content{
+    width: 80%;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.dashboard-links-text{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #04091E;
+    padding: 10px 10px;
+}
+.dashboard-content{
+    background: #F5F5F5;
+    padding-top: 60px;
+}
+.dashboard-links-text p{
+    padding-left: 9px;
+}
+.dashboard-heading{
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #04091E;
+    background-color: #F5F5F5;
+}
+.heading-content img{
+    padding-right: 15px;
+    padding-top: 16px;
+}
+.heading-content{
+    font-family: 'DM sans';
+    font-size: 22px;
+}
+.dashboard-content-headings{
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 180%;
+    color: #04091E;
+}
+.transfer-heading{
+    Font family: Space Grotesk;
+
+Font size: 24px;
+Line height: 43px;
+Line height: 180%;
+Align: Left;
+Vertical align: Top;
+Fill Color Style: Colors/Basic/Interface 1;
+Fill: Solid;
+#04091E;
+}
+/* CSS: Dashboard Section Start */
+
+
+
+
+
+/* Helping classes */
+.h-flex{
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    column-gap: 15px;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.vote-icons-flex{
+    width: 100%;
+    display: flex;
+}
+.w-95{
+    width: 95%;
+}
+.d-block{
+    display: block;
+}
+.w-25{
+    width: 25% !important;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mr-auto{
+    margin-right: auto;
+}

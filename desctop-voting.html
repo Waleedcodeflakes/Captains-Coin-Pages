@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-desktop-voting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Capptains Coin Voting Page</title>
+</head>
+<body>
+    <div class="page-body" id="pageBody">
+        <section class="hero">
+            <div class="hero-content h-flex ml-auto mr-auto">
+                <div class="hero-header space-grotesk-font">
+                    <p>Captains Coin</p>
+                </div>
+                <div class="menu-bar-responseve">
+                    <img id="menuBar" onclick="showNavbar()" style="display: none;" src="/CaptainsCoin-imgs/menu_24px.svg" alt="">
+                </div>
+                <nav class="dm-sans-font" id="navBar">
+                    <div class="responsive-x-icon">
+                        <img class="cross-icon" id="crossIconResponsive" onclick="closeNavbar()" src="/CaptainsCoin-imgs/x-icon.svg" alt="">
+                    </div>
+                    <div class="nav-links h-flex dm-sans-font">
+                        <ul class="navigation-bar h-flex">
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>Topics</li></a>
+                            <a href="#"><li>
+                                <button id="register" onclick="showRegisterForm()" onclick="toggle()">Get your vote</button>
+                            </li></a>
+                            <li>
+                                <div id="contactIcon" onclick="showUserId()" class="hero-icon">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 9C2.79086 9 1 7.20914 1 5C1 2.79086 2.79086 1 5 1C7.20914 1 9 2.79086 9 5C9 7.20914 7.20914 9 5 9Z" stroke="#04091E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7V5C1 3.93913 1.42143 2.92172 2.17157 2.17157C2.92172 1.42143 3.93913 1 5 1H13C14.0609 1 15.0783 1.42143 15.8284 2.17157C16.5786 2.92172 17 3.93913 17 5V7" stroke="#04091E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </div>                             
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="crypto-area dm-sans-font h-flex">
+            <div class="crypto-area w-95 ml-auto mr-auto">
+                <div class="crypto-heading">
+                    <p>Crypto</p>
+                </div>
+                <div class="crypto-text">
+                    <p>Will Bitcoin remain the largest crypto token in market cap through the end of 2022?</p>
+                </div>
+                <div class="h-flex">
+                    <div class="gray-bg">
+                        <div class="yes-text">
+                            <p>Yes</p>
+                        </div>
+                    </div>
+                    <div class="gray-bg">
+                        <div class="no-text">
+                            <p>No</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-details d-flex">
+                    <div class="days">12
+                        <span>days</span>
+                    </div>
+                    <div class="hours">7
+                        <span>hrs</span>
+                    </div>
+                    <div class="seconds">30
+                        <span>secs</span>
+                    </div>
+                </div>
+                <div class="bottom-info h-flex">
+                    <div class="user-contact d-flex">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 28C0 29.1046 0.89543 30 2 30H28C29.1046 30 30 29.1046 30 28V2C30 0.895431 29.1046 0 28 0H2C0.895431 0 0 0.89543 0 2V28ZM19.9999 10.0002C19.9999 12.7669 17.7666 15.0002 14.9999 15.0002C12.2333 15.0002 9.99994 12.7669 9.99994 10.0002C9.99994 7.23358 12.2333 5.00024 14.9999 5.00024C17.7666 5.00024 19.9999 7.23358 19.9999 10.0002ZM15.0001 18.167C11.6667 18.167 5.00006 20.0003 5.00006 23.3337C5.00006 24.2541 5.74625 25.0003 6.66673 25.0003H23.3334C24.2539 25.0003 25.0001 24.2541 25.0001 23.3337C25.0001 20.0003 18.3334 18.167 15.0001 18.167Z" fill="#36BB91"/>
+                        </svg>
+                        <div class="review-text">400</div>
+                    </div>
+                    <div class="review-sec d-flex">
+                        <div class="like d-flex">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44468 12.0493L20.1429 0.278809L22.5899 2.93455L20.9188 11.7542H33.318V18.9673L27.8122 33.0657H9.44468V12.0493ZM6.46052 13.3936H0.492188V33.0657H6.46052V13.3936Z" fill="#36BB91"/>
+                            </svg>
+                            <div class="review-text">77%</div>    
+                        </div>
+                        <div class="dislike d-flex">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1558 21.2459L13.4576 33.0164L11.0105 30.3606L12.6817 21.541H0.282471V14.3279L5.78826 0.229492H24.1558V21.2459ZM33.1083 0.229492H27.14V19.9016H33.1083V0.229492Z" fill="#F94025"/>
+                            </svg>
+                            <div class="review-text">23%</div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="body-hr">
+                <div class="bitcoin-text space-grotesk-font">
+                    <p>Bitcoin has had the largest market cap among crypto tokens worldwide for many years. However, some analysts believe the effervescent and innovative dynamics of crypto assets might present changes to that in a near future.<br><br>
+
+                        If by December 31, 2022, no other cryptotoken - except for stablecoins - manages to surpass Bitcoin in terms market capitalization, this market will be resolved as “Yes”.<br><br>
+                        
+                        This market will be resolved based on data from CoinGecko’s cryptoassets market cap ranking, as made available at https://www.coingecko.com/.
+                    </p>
+                </div>
+                <div class="login-area h-flex">
+                    <div class="login-text">
+                        <p>In order to Vote, You have to</p>
+                    </div>
+                    <div class="login-btn">
+                        <a href="#"><button>Login</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Votes Results Section start -->
+        <section class="vote-results w-95 ml-auto mr-auto">
+            <div class="vote-result-area">
+                <div class="vote-result-heading">
+                    <p>Votes Results</p>
+                </div>
+                <hr class="vote-result-hr">
+                <div class="vote-result-display">
+                    <div class="vote-result-sub-heading h-flex">
+                        <p>Votes Results</p>
+                        <div class="svg-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="#F7F8F9"/>
+                                <g clip-path="url(#clip0_188_355)">
+                                <path d="M23.3334 12L17.0001 18.3333L13.6667 15L8.66675 20" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.3333 12H23.3333V16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_188_355">
+                                <rect width="16" height="16" fill="white" transform="translate(8 8)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="total-votes-text h-flex">
+                        <div class="total-vote-heading">
+                            <p>Total Votes</p>
+                        </div>
+                        <div class="total-vote-number">
+                            <p>▴ 4.75% </p>
+                        </div>
+                    </div>
+                    <div class="yes-percentage h-flex">
+                        <!-- <div class="yes-percentage-area h-flex"> -->
+                            <div class="yes-percentage-text">
+                            <p>Yes</p>
+                        </div>
+                        <div class="yes-percentage-number">
+                            <p>45%</p>
+                        </div>
+                        <!-- </div> -->
+                        
+                        <div class="progress">
+                            <div class="yes-progress-bar" role="progressbar" style="width: 45%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="no-percentage h-flex">
+                        <!-- <div class="no-percentage-area h-flex"> -->
+                            <div class="no-percentage-text">
+                                <p>No</p>
+                            </div>
+                            <div class="no-percentage-number">
+                                <p>55%</p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="progress">
+                            <div class="no-progress-bar" role="progressbar" style="width: 55%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-results h-flex">
+                <div class="pie-chart-area">
+                    <div class="top-charts-area h-flex">
+                        <div class="top-area-text">
+                            <div class="pie-chart-text">
+                            <p>Votes Results</p>
+                            <div class="regularvote-text">
+                                <p>Relgular Votes</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="right-reviewimages-area d-flex">
+                            <div class="review-imgs">
+                                <img src="/CaptainsCoin-imgs/girl-vote-img.svg" alt="">
+                                <img src="/CaptainsCoin-imgs/women-vote-img.svg" alt="">
+                                <img src="/CaptainsCoin-imgs/girl-review-img.svg" alt="">
+                                <img src="/CaptainsCoin-imgs/boy-voter-img.svg" alt="">
+                            </div>
+                            <div class="icon-right">
+                                <img src="/CaptainsCoin-imgs/Icon R.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pie-chart d-flex yes-no-text">
+                        <canvas id="pieChart" width="400" height="400"></canvas>
+                        <div class="colors-detail">
+                            <div class="yes-color-details d-flex ">
+                                <img src="/CaptainsCoin-imgs/Ellipse 13.svg" alt="">
+                            <p>Yes</p>
+                            </div>
+                            <div class="yes-color-details d-flex">
+                                <img src="/CaptainsCoin-imgs/Ellipse red.svg" alt="">
+                            <p>No</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-vote-result-area d-flex">
+                        <div class="vote-text d-flex">
+                            <img src="/CaptainsCoin-imgs/Icon++.svg" alt="">
+                            <p>Vote</p>
+                        </div>
+                        <div class="signin-text d-flex">
+                            <p>Sign in</p>
+                            <img src="/CaptainsCoin-imgs/Icongt.svg" alt="">
+                        </div>
+                    </div>                       
+                </div>
+                <div class="doughnut-chart-area">
+                    <div class="top-charts-area h-flex">
+                        <div class="top-area-text">
+                            <div class="pie-chart-text">
+                            <p>Votes Results</p>
+                            <div class="regularvote-text">
+                                <p>Relgular Votes</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="right-reviewimages-area d-flex">
+                            <div class="review-imgs">
+                                <img src="/CaptainsCoin-imgs/girl-vote-img.svg" alt="">
+                                <img src="/CaptainsCoin-imgs/women-vote-img.svg" alt="">
+                                <img src="/CaptainsCoin-imgs/girl-review-img.svg" alt="">
+                                <img src="/CaptainsCoin-imgs/boy-voter-img.svg" alt="">
+                            </div>
+                            <div class="icon-right">
+                                <img src="/CaptainsCoin-imgs/Icon R.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doughnut-chart d-flex yes-no-text">
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                        <div class="colors-detail">
+                            <div class="yes-color-details d-flex ">
+                                <img src="/CaptainsCoin-imgs/Ellipse 13.svg" alt="">
+                            <p>Yes</p>
+                            </div>
+                            <div class="yes-color-details d-flex">
+                                <img src="/CaptainsCoin-imgs/Ellipse red.svg" alt="">
+                            <p>No</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-vote-result-area d-flex">
+                        <div class="vote-text d-flex">
+                            <img src="/CaptainsCoin-imgs/Icon++.svg" alt="">
+                            <p>Vote</p>
+                        </div>
+                        <div class="signin-text d-flex">
+                            <p>Sign in</p>
+                            <img src="/CaptainsCoin-imgs/Icongt.svg" alt="">
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <div>
+          </div>
+        <!-- Votes Results Section ends -->
+        <!-- Contact Us section start  -->
+        <section class="contact-us">
+            <div class="contact-us-content h-flex">
+                <div class="about-captain-coin">
+                    <div class="captains-logo">
+                        <img src="/CaptainsCoin-imgs/logo-captains.svg" alt="">
+                    </div>
+                    <div class="captains-logo-text dm-sans-font">
+                        <p>The Captain Coin is the first VotingCoin of the world. You can vote on social and economic topics.</p>
+                    </div>
+                </div>
+                <div class="navigate-area">
+                    <div class="navigate-heading space-grotesk-font">
+                        <p>Navigate</p>
+                    </div>
+                    <div class="navigate-links dm-sans-font">
+                        <a href="#"><p>Explore</p></a>                
+                        <a href="#"><p>help Center</p></a>                    
+                        <a href="#"><p>Blog</p></a>             
+                        <a href="#"><p>Jobs</p></a>             
+                        <a href="#"><p>Become a partner</p></a>
+                    </div>
+                </div>
+                <div class="get-updates">
+                    <div class="get-updates-heading space-grotesk-font">
+                        <p>Get the latest updates</p>
+                    </div>
+                    <div class="update-form">
+                        <form action="">
+                            <label for="email" class="dm-sans-font"></label>
+                            <input type="email" name="email" placeholder="Your e-mail">
+                            <label for="submit" class="dm-sans-font"></label>
+                            <input type="submit" name="submit" value="I'm in">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer-section d-flex">
+                <div class="copy-right-text dm-sans-font">
+                    <p>© Captains Coin, All rights reserved.</p>
+                </div>
+                <div class="footer-links d-flex dm-sans-font">
+                    <a href="#"><p>Terms</p></a>
+                    <a href="#"><p>Privacy Policy</p></a>
+                </div>
+                <div class="footer-icons d-flex">
+                    <div class="facebook-icon">
+                        <a href="#"><img src="/CaptainsCoin-imgs/Facebook.png" alt=""></a>
+                    </div>
+                    <div class="insta-icon">
+                        <a href="#"><img src="/CaptainsCoin-imgs/Instagram.png" alt=""></a>
+                    </div>
+                    <div class="twitter-icon">
+                        <a href="#"><img src="/CaptainsCoin-imgs/Twitter.svg" alt=""></a>
+                    </div>
+                    <div class="linkedin-icon">
+                        <a href="#"><img src="/CaptainsCoin-imgs/Linkdien.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us section ends  -->
+        <!-- Register popup section -->
+        <section id="registerPopup" class="registration-popup">
+            <div class="register-form">
+                <div class="cross-icon">
+                    <img id="crossIcon" onclick="hideRegisterForm()" src="/CaptainsCoin-imgs/x-icon.svg" alt="">
+                </div>
+                <div class="register-heading">
+                    <p>Register</p>
+                </div>
+                <hr class="body-hr">
+                <div class="register-content">
+                    <p>Here you can Register for  Captain’s Coin.<br>
+                        After that you will be taken to the next step to buy Captain’s Coin and start voting!</p>
+                </div>
+                <div class="reg-form">
+                    <form action="">
+                        <div class="fname-lname flex">
+                            <label for="fname"></label>
+                            <input type="text" name="fname" id="fname" placeholder="First Name*">
+                            <label for="lname"></label>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name*">
+                        </div>
+                        <div class="email-lang-password">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="E-mail address*">
+                            <select name="language" id="language">
+                                <option value="language">Language</option>
+                            </select>
+                            <label for="password"></label>
+                            <input type="password" name="password" id="password" placeholder="Lightwallet password*">
+                        </div>
+                        <hr class="body-hr">
+                        </div>
+                        <div class="signup-btn">
+                            <input type="submit" value="Sign up">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        <!-- Register popup section ends-->
+        <!-- Profile popup section start-->
+        <section id="profilePopup" style="display: none;" class="profile-popup">
+            <div class="profile-popup-content">
+                <div class="holder-name">
+                    <p>Jonathon Doe</p>
+                </div>
+                <div class="balance-area h-flex">
+                    <div class="balance-content-icon">
+                        <img src="/CaptainsCoin-imgs/Icon dashboard content.svg" alt="">
+                    </div>
+                    <div class="balance-text">
+                        <p>Balance</p>
+                        <div class="balance-value">
+                            <p>133.25 ETH</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="my-profile-text h-flex profile-popup-menu">
+                    <img src="/CaptainsCoin-imgs/user-icon.svg" alt="">
+                    <p>My Profile</p>
+                </div>
+                <hr class="profile-popup-hr">
+                <div class="manage-coins h-flex profile-popup-menu">
+                    <img src="/CaptainsCoin-imgs/dollar-sign.svg" alt="">
+                    <p>Manage Coins</p>
+                </div>
+                <hr class="profile-popup-hr">
+                <div class="dashboard-text h-flex profile-popup-menu">
+                    <img src="/CaptainsCoin-imgs/settings.svg" alt="">
+                    <p>Dashboard</p>
+                </div>
+                <hr class="profile-popup-hr">
+                <div class="favourities-text h-flex profile-popup-menu">
+                    <img src="/CaptainsCoin-imgs/heart.svg" alt="">
+                    <p>Favourities</p>
+                </div>
+                <hr class="profile-popup-hr">
+                <div class="log-out-text h-flex profile-popup-menu">
+                    <img src="/CaptainsCoin-imgs/log-out.svg" alt="">
+                    <p>Log Out</p>
+                </div>
+            </div>
+        </section>
+        <!-- Profile popup section ends-->
+    </div>
+<!-- JavaScript For Pie Chart and Doughnut Chart -->
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',  
+            data: {
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [55, 45],
+                    backgroundColor: [
+                    '#F94025',
+                    '#0FCA7A'
+                    ],
+                    hoverOffset: 4
+                }]
+            }
+        });
+    </script>
+    <script>
+        var ctxa = document.getElementById("pieChart");
+        var pieChart = new Chart(ctxa, {
+            type: 'pie',  
+            data: {
+        datasets: [{
+            label: 'My First Dataset',
+            data: [55, 45],
+            backgroundColor: [
+            '#36BB91',
+            '#F94025'
+            ],
+            hoverOffset: 4
+        }]
+        }
+    });
+    </script>
+
+    <!-- JavaScript for Register Form -->
+    <script>
+        var val = 0;
+        let responsive = document.getElementById('crossIconResponsive');
+        function showRegisterForm() {
+            let form = document.getElementById('register');
+            let register = document.getElementById('registerPopup');
+            register.style.display = 'block'
+        }
+        function hideRegisterForm() {
+            let cross = document.getElementById('crossIcon');
+            let register = document.getElementById('registerPopup');
+            register.style.display = 'none'
+        }
+        function showUserId() {
+            var contact = document.getElementById('contactIcon');
+            let profile = document.getElementById('profilePopup');
+            // console.log(profile);
+            if (profile.style.display == 'none') {
+                profile.style.display = 'block'
+            } else {
+                profile.style.display = 'none';
+            }
+        }
+        function showNavbar() {
+            let menu = document.getElementById('menuBar');
+            let navBar = document.getElementById('navBar');
+            if (navBar.style.display == 'none' ) {
+            navBar.style.display = 'block'
+            } else {
+            navBar.style.display = 'none'
+            }
+        }
+        function closeNavbar() {
+            navBar.style.display = 'none'
+        }
+        function toggle() {
+            var pageBody = document.getElementById('pageBody');
+            pageBody.classList.toggle('active')
+        }
+
+        function changeBG() {
+  var bgColor = "rgb("+random(255)+", "+random(255)+", "+random(255)+")";
+  document.body.style.backgroundColor = bgColor;
+  //document.body.style.backgroundColor = "rgb(255,255,0)";
+   console.log(bgColor);
+}
+    </script>
+    
+</body>
+</html>

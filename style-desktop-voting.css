@@ -1,0 +1,1075 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;  
+}
+.space-grotesk-font{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.dm-sans-font{
+    font-family: 'DM Sans';
+}
+.urbanist-font{
+    font-family: 'Urbanist', sans-serif;
+}
+.lato-font{
+    font-family: 'Lato', sans-serif;
+}
+.body-hr{
+    border: 1px solid #CDD6D7;
+}
+/* CSS: Hero section start */
+.hero{
+    padding: 17px;
+    background: linear-gradient(134.66deg, #36BB91 -5.13%, #CFE0E6 93.57%, #CFE6DB 93.57%);
+    background-size: 100%;
+    
+}
+.hero-content{
+    margin: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.hero-header p{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.nav-links ul{
+    list-style-type: none;
+    padding: 0px 30px;
+}
+.nav-links ul li{
+    align-items: baseline;
+    font-size: 18px;
+    line-height: 180%;
+    font-weight: 500;
+    padding: 0px 30px;
+}
+.nav-links ul a{
+    text-decoration: none;
+    color: #04091E;
+}
+.nav-links ul li button{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #fff;
+    background-color: #04091E;
+    padding: 8px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hero-icon{
+    display: inline-grid;
+    justify-items: center;
+}
+.hero-icon svg{
+    padding-bottom: 2px;
+}
+@media only screen and (max-width: 600px) {
+    .page-body{
+        overflow: hidden;
+        width: min-content !important;
+        width: 100% !important;
+    }
+    .hero-header p{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        color: #000000;
+    }
+    nav{
+        display: none;
+    }
+}
+/* CSS: Hero section ends */
+/* CSS: Topics section start */
+.crypto-area{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    column-gap: 15px;
+    position: relative;
+}
+.crypto-heading p{
+    padding: 40px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #747681;
+}
+.crypto-text p{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 82px;
+    color: #04091E;
+}
+.gray-bg{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.yes-text p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #36BB91;
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 90px 10px 20px;
+    margin: 30px 20px;
+}
+.no-text p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #F94025;
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px 90px 10px 20px;
+    margin: 30px 20px;
+}
+.time-details{
+    width: fit-content;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    padding: 4px 17px;
+    margin: -30px;
+    left: 42%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 0px rgba(6, 14, 34, 0.2);
+}
+.days, .seconds{
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #34CAA5;
+}
+.hours{
+    padding: 0 7px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #F94025;
+}
+.days span, .hours span, .seconds span{
+    color: #747681;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+.time-details img{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+.bitcoin-text{
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #04091E;
+}
+.bottom-info{
+    margin: 40px 0 20px 0;
+}
+.user-contact svg{
+    padding-right: 5px;
+}
+.review-sec{
+    width: 100%;
+    justify-content: end;
+}
+.like, .dislike{
+    padding: 0 0px 0 30px;
+}
+.review-text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+    justify-content: center;
+    color: #04091E;
+}
+.login-area{
+    justify-content: center;
+    margin: 90px 0 60px 0;
+}
+.login-text{
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #04091E;
+}
+.login-btn button{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #04091E;
+    border-radius: 8px;
+    padding: 8px 30px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .crypto-area{
+        width: 95% !important;
+        margin: 0 !important;
+    }
+    .crypto-heading p{
+        padding: 30px 0 15px 0;
+    }
+    nav{
+        display: none;
+    }
+    .crypto-text p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .gray-bg{
+        width: 100% !important;
+        height: 170px;
+    }
+    .yes-text p{
+        font-size: 20px;
+        line-height: 26px;
+        padding: 2px 20px 2px 20px;
+        margin: 10px 10px;
+    }
+    .no-text p{
+        font-size: 20px;
+        line-height: 26px;
+        padding: 2px 20px 2px 20px;
+        margin: 10px 10px;
+    }
+    .time-details{
+        padding: 4px 17px;
+        margin: -25px;
+        left: 23%;
+    }
+    .days, .seconds{
+        padding: 0 5px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        color: #34CAA5;
+    }
+    .hours{
+        padding: 0 7px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        color: #F94025;
+    }
+    .days span, .hours span, .seconds span{
+        color: #747681;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .time-details img{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 25px;
+    }
+    .bitcoin-text{
+        padding-top: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #747681;;
+    }
+    .login-area{
+        display: block !important;
+        text-align: center !important;
+        margin: 30px 0 60px 0;
+    }
+}
+/* CSS: Topics section ends */
+/* CSS: Vote Result section start */
+.vote-result-heading p{
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #04091E;
+}
+.vote-result-display{
+    padding: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.vote-result-sub-heading p{
+    text-align: center;
+}
+.vote-result-sub-heading{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #72777B;
+    align-items: center;
+    justify-content: space-between;
+}
+.vote-result-hr{
+    border: 1px solid #CDD6D7;
+    margin: 7px 0 20px 0;
+}
+.total-vote-heading p{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #2D2D2D;
+    padding: 10px 0;
+}
+.total-vote-number p{
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: #089B5C;
+}
+.yes-percentage-text, .no-percentage-text{
+    width: 10%;
+    padding: 8px 0;
+}
+.yes-percentage-text p, .no-percentage-text p{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #2D2D2D;
+}
+.yes-percentage-number p, .no-percentage-number p{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #2D2D2D;
+    width: 5%;
+}
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #E7EAEE;
+    border-radius: 50px;
+    width: 70%;
+}
+.yes-progress-bar, .no-progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #36BB91;
+    transition: width .6s ease;
+    border-radius: 50px;
+}
+.no-progress-bar{
+    background-color: #F94025 !important;
+}
+.yes-progress-bar progress::-webkit-progress-value {
+    background: #36BB91;
+    border-radius: 50px;
+}
+.no-progress-bar progress::-webkit-progress-value {
+    background: #F94025;
+    border-radius: 50px;
+}
+#myprogressbar::-webkit-progress-value {background: #E7EAEE;} 
+.chart-results{
+    margin-top: 30px;
+    width: 100%;
+}
+.top-charts-area{
+    justify-content: space-between;
+}
+.review-imgs img{
+    margin-left: -12px;
+}
+.pie-chart-area , .doughnut-chart-area{
+    padding: 12px;
+    width: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    column-gap: 20px;
+}
+.pie-chart-text, .doughnut-chart-text{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #72777B;
+}
+.regularvote-text{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #2D2D2D;
+}
+canvas {
+    margin: 17px 0;
+    width: 25% !important;
+    height: 25% !important;
+ }
+.yes-no-text{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #2D2D2D;
+}
+.yes-no-text p{
+    padding: 5px 4px;
+
+}
+.pie-chart, .doughnut-chart{
+    justify-content: center;
+}
+.bottom-vote-result-area{
+    justify-content: space-between;
+}
+.vote-text p{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2D2D2D;
+    padding-left: 10px;
+}
+.signin-text p{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: #2D2D2D;
+    padding-right: 10px;
+
+}
+@media only screen and (max-width: 600px) {
+    .vote-result-heading p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .total-vote-number p{
+        font-family: 'Lato';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        color: #089B5C;
+    }
+    .yes-percentage, .no-percentage{
+        display: block !important;
+    }
+    .yes-percentage-text, .no-percentage-text{
+        width: 10%;
+        padding: 8px 0;
+    }
+    .yes-percentage-area, .no-percentage-area{
+        display: flex !important;
+        width: 50% !important;
+        justify-content: space-between;
+    }
+    .yes-percentage-number p, .no-percentage-number p{
+        width: 55%;
+        text-align: end;
+        margin-top: -30px;
+    }
+    .progress {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .top-charts-area{
+        justify-content: space-between;
+    }
+    .review-imgs img{
+        margin-left: -12px;
+    }
+    .chart-results{
+        display: block !important;
+        width: 100% !important;
+    }
+    .pie-chart-area , .doughnut-chart-area{
+        display: block !important;
+        width: 95%;
+    }
+    .right-reviewimages-area{
+        display: flex !important;
+        width: 40% !important;
+        justify-content: end !important;
+    }
+    
+    canvas {
+        margin: 0px 0;
+        width: 50% !important;
+        height: 50% !important;
+        margin-bottom: 25px !important;
+     }
+    .pie-chart, .doughnut-chart{
+        justify-content: left;
+    }
+}
+/* CSS: Vote Result section ends */
+/* CSS: Contact Us section start */
+.contact-us{
+    background: linear-gradient(134.66deg, #36BB91 -5.13%, #CFE0E6 93.57%);
+    padding: 100px 25px 0 25px;
+    margin-top: 250px;
+}
+.contact-us-content{
+    justify-content: flex-start !important;
+    width: 100%;
+}
+
+.about-captain-coin{
+    width: 50%;
+}
+.captains-logo-text{
+    padding-top: 30px;
+    width: 60%;
+}
+.captains-logo-text p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #F5F5F5;
+}
+.navigate-area{
+    width: 60%;
+}
+.navigate-heading p{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #04091E;
+    padding-bottom: 30px;
+}
+.navigate-links p{
+    padding: 15px 0;
+}
+.navigate-links a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #747681;
+    text-decoration: none;
+}
+.get-updates{
+    justify-content: end;
+    width: 40%;
+}
+.get-updates-heading p{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #04091E;
+} 
+.update-form{
+    padding-top: 40px;
+}
+.update-form input[type=email]{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 20px;
+    width: 350px;
+    font-family: 'DM Sans';
+}
+.update-form input[type=email]::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #04091E !important;
+}
+.update-form input[type=submit]{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background-color:#F94025;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    margin-left: -125px;
+}
+.footer-hr{
+    margin: 100px 0px 0px 0px;
+    box-sizing: border-box;
+    border: 1px solid #F5F5F5;
+}
+.footer-section{
+    align-items: center;
+}
+.copy-right-text{
+    width: 30%;
+}
+.copy-right-text p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #04091E;
+}
+.footer-links p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #04091E;
+    padding: 0 20px;
+    text-decoration: none;
+    min-width: 17%;
+}
+.footer-links a{
+    text-decoration: none;
+}
+.footer-icons{
+    padding: 40px 0px;
+    width: 53%;
+    justify-content: end;
+}
+.footer-icons a{
+    padding: 0 8px;
+}
+@media only screen and (max-width: 600px) {
+    .footer-section{
+        display: block !important;
+    }
+    .contact-us{
+        padding: 50px 25px 0 25px;
+        margin-top: 50px;
+    }
+    .contact-us-content{
+        display: block !important;
+        justify-content: flex-start !important;
+        width: 90% !important;
+        margin: auto !important;
+    }
+    
+    .about-captain-coin{
+        width: 150% !important;
+    }
+    .navigate-area{
+        margin-top: 50px;
+    }
+    .navigate-heading p{
+        padding-bottom: 15px;
+    }
+    .get-updates{
+        width: 110% !important;
+        padding-top: 30px;
+    }
+    .update-form input[type=email]{
+        outline: none;
+        width: 90%;
+    }
+    .update-form input[type=email]::placeholder{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #04091E !important;
+
+    }
+    .update-form input[type=submit]{
+        margin-left: -117px;
+    }
+    .footer-hr{
+        margin: 100px 0px 0px 0px;
+        box-sizing: border-box;
+        border: 1px solid #F5F5F5;
+    }
+    .footer-section{
+        align-items: center;
+    }
+    .copy-right-text{
+        margin-top: 15px;
+        width: 30%;
+    }
+    .copy-right-text{
+        width: 100%;
+    }
+    .footer-links{
+        display: flex !important;
+        padding: 20px 0 0px 100px;
+    }
+    .footer-links p{
+        padding: 0 10px;
+    }
+    .footer-links a{
+        text-decoration: none;
+    }
+    .footer-icons{
+        display: flex !important;
+        padding: 40px 0px;
+        width: 100%;
+        justify-content: center !important;
+    }
+    .footer-icons a{
+        padding: 0 8px;
+    }
+}
+/* CSS: Contact Us section ends */
+/* CSS: Registeration Form Popup start*/
+.register-form{
+    position: fixed;
+    width: 40%;
+    top: 125px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.page-body#pageBody.active{
+    /* content: "";
+    position: fixed;
+    top: 0; */
+    width: -webkit-fill-available;
+    background: #0000005e;
+    height: -webkit-fill-available;
+}
+/* body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    background: #0000005e;
+    height: -webkit-fill-available;
+} */
+.register-form{
+    background-color: white;
+    padding: 10px 20px;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+}
+.cross-icon{
+    text-align: end;
+    cursor: pointer;
+}
+.register-heading{
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+    color: #04091E;
+    padding-bottom: 20px;
+}
+.register-content{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(4, 9, 30, 0.6);
+    padding: 20px 0 10px 0;
+}
+.fname-lname{
+    display: flex !important;
+    column-gap: 7px;
+}
+.fname-lname input[type=text]{
+    background: #F5F5F5;
+    border-radius: 10px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(4, 9, 30, 0.6);
+    padding: 10px 18px;
+    border: none;
+    width: 50%;
+}
+.email-lang-password input[type=email], .email-lang-password input[type=password]{
+    background: #F5F5F5;
+    border-radius: 10px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+    color: rgba(4, 9, 30, 0.6);
+    padding: 10px 18px;
+    border: none;
+    width: 93%;
+    margin: 14px 0;
+}
+.email-lang-password select{
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+    color: rgba(4, 9, 30, 0.6);
+    padding: 12px 12px;
+    border: 1px solid #CDD6D7;
+    width: 100%;
+}
+.email-lang-password input[type=password]{
+    margin-bottom: 30px;
+}
+.signup-btn{
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+.signup-btn input{
+    background-color: #36BB91;
+    border: 1px solid #CDD6D7;
+    border-radius: 10px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    padding: 10px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .register-form{
+    position: fixed;
+    top: 125px;
+    width: 90% !important;
+    margin: auto !important;
+    border: 1px solid #000000;
+    left: 0;
+    right: 0;
+    z-index: 5 !important;
+    }
+    /* body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        width: -webkit-fill-available;
+        background: #0000005e;
+        height: -webkit-fill-available;
+    } */
+    .hero-content{
+    display: flex !important;
+}
+    .fname-lname input[type=text]{
+        margin-bottom: 13px;
+        padding: 14px 18px;
+        border: none;
+        width: 90%;
+    }
+    .email-lang-password input[type=email]{
+        margin-top: 0px;
+    }
+    .email-lang-password input[type=email], .email-lang-password input[type=password]{
+        width: 90%;
+        padding: 14px 18px;
+    }
+}
+/* CSS: Registeration Form Popup ends*/
+/* CSS: Profile Popup menu start */
+.profile-popup{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 3;
+    background-color: white;
+}
+.profile-popup{
+    width: 20%;
+    padding: 30px 20px 10px 20px;
+}
+.holder-name{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #04091E;
+}
+.balance-area{
+    background: #F5F5F5;
+    width: 10%;
+    align-items: center !important;
+    padding: 20px;
+    margin: 15px 0;
+}
+.balance-text{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #747681;
+}
+.balance-value{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    color: #04091E;
+}
+.my-profile-text{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    color: #04091E;
+}
+.my-profile-text{
+    align-items: center;
+}
+.manage-coins{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    color: #04091E;
+}
+.dashboard-text{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    color: #04091E;
+}
+.favourities-text{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    color: #04091E;
+}
+.log-out-text{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    color: #04091E;
+}
+.profile-popup img{
+    padding-right: 10px;
+}
+.profile-popup-menu{
+    padding: 12px;
+    align-items: center !important;
+}
+.profile-popup-hr{
+    border: 1px solid #F5F5F5;
+}
+/* CSS: Profile Popup menu ends */
+/* Media query for responsive top navbar */
+@media only screen and (max-width: 600px) {
+    .responsive-x-icon{
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+    }
+    .profile-popup-menu{
+        display: flex;
+    }
+    #crossIconResponsive{
+        display: block !important;
+      }
+      .profile-popup{
+        position: absolute;
+        width: 80%;
+        margin: auto;
+        padding: auto;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+        z-index: 3;
+        top: 300px;
+    }
+    #navBar{
+        z-index: 4 !important;
+    }
+    .navigation-bar{
+        background-color: white !important;
+        position: absolute !important;
+        display: block !important;
+        width: 86% !important;
+    }
+    nav{
+        background-color: white;
+        display: block;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-links ul li{
+        margin: 25px;
+    }
+    .hero-icon{
+        background: #F5F5F5;
+    }
+    .hero-icon svg{
+        background-size: 50%;
+    }
+    .menu-bar-responseve img{
+        display: block !important;
+    }
+}
+
+
+
+
+
+
+
+
+/* Helping classes */
+.h-flex{
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    column-gap: 15px;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.vote-icons-flex{
+    width: 100%;
+    display: flex;
+}
+.w-95{
+    width: 95%;
+}
+.d-block{
+    display: block;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mr-auto{
+    margin-right: auto;
+}
+
+#registerPopup{
+    display: none;
+  }
+  #profilePopup{
+    display: none;
+  }
+  #crossIconResponsive{
+    display: none;
+  }
